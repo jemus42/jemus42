@@ -4,7 +4,7 @@ on:
   # Schedule updates
   schedule: [{cron: "0 * * * *"}]
   # Lines below let you run workflow manually and on each commit
-  push: {branches: ["master", "main"]}
+  push: {branches: "main"}
   workflow_dispatch:
 jobs:
   github-metrics:
@@ -24,7 +24,7 @@ jobs:
           config_animations: yes
           config_timezone: Europe/Berlin
           plugin_languages: yes
-          plugin_languages_ignored: html, css, dockerfile
+          # plugin_languages_ignored: html, css, dockerfile
           plugin_languages_skipped: jemus42
           plugin_habits: yes
           plugin_habits_from: 250
