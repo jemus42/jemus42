@@ -26,10 +26,10 @@ jobs:
           config_animations: yes
           config_timezone: Europe/Berlin
           plugin_languages: yes
-          plugin_languages_ignored: html, css, dockerfile, JavaScript, TypeScript
+          plugin_languages_ignored: html, css, dockerfile, JavaScript, TypeScript, Jupyter Notebook
           plugin_languages_skipped: jemus42
           plugin_habits: yes
           plugin_habits_from: 250
-          plugin_habits_days: 14
+          plugin_habits_days: 60
           plugin_habits_facts: yes
           plugin_habits_charts: yes
