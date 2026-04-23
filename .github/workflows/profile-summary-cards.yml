@@ -1,0 +1,27 @@
+name: GitHub Profile Summary Cards
+
+on:
+  schedule:
+    - cron: "0 2 * * *" # daily at 02:00 UTC
+  workflow_dispatch:
+    # allow manual trigger from Actions tab
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: generate-github-profile-summary-cards
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: vn7n24fzkq/github-profile-summary-cards@release
+        env:
+          GITHUB_TOKEN: ${{ secrets.SUMMARY_GITHUB_TOKEN }}
+        with:
+          USERNAME: ${{ github.repository_owner }}
+          BRANCH_NAME: "main"
+          UTC_OFFSET: 1 # CET; change to 2 in summer or just leave at 1
+          # EXCLUDE: "HTML,CSS"  # optional: skip languages you don't care about
+          # THEME: "nord_dark"   # optional: see themes below
