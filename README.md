@@ -1,4 +1,4 @@
-![](https://github.com/jemus42/jemus42/raw/main/profile-summary-card-output/0-profile-details.svg)
+![](profile-summary-card-output/0-profile-details.svg)
 
 <a href="https://github.com/jemus42/jemus42">
   <img src="profile-summary-card-output/3-stats.svg" width="49%">

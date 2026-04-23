@@ -24,4 +24,4 @@ jobs:
           BRANCH_NAME: "main"
           UTC_OFFSET: 1 # CET; change to 2 in summer or just leave at 1
           # EXCLUDE: "HTML,CSS"  # optional: skip languages you don't care about
-          # THEME: "nord_dark"   # optional: see themes below
+          THEME: "monokai" 
